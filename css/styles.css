@@ -224,6 +224,18 @@ img {
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
+.icon-features {
+  width: 270px;
+  height: 120px;
+  background-color: var(--filter-btn);
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
 /* activity */
 .activity {
   padding-bottom: 94px;
