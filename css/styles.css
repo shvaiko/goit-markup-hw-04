@@ -8,6 +8,7 @@
   --list-address: rgba(255, 255, 255, 0.6);
   --hover-btn: #188ce8;
   --filter-btn: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 /* глобальный border-box */
 html {
@@ -184,6 +185,8 @@ img {
 
   background-color: var(--accent);
   color: var(--bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   font-family: inherit;
   font-weight: 700;
@@ -287,6 +290,8 @@ img {
 .team-position {
   line-height: 1.18;
   font-size: 16px;
+
+  margin-bottom: 16px;
 }
 .team-description {
   padding-top: 30px;
@@ -307,6 +312,75 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   border-radius: 0px 0px 4px 4px;
+}
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+}
+.team-soc-icon:not(:last-child) {
+  margin-right: 10px;
+}
+.team-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--icon-color);
+  background-color: var(--bg-color);
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.icon-team {
+  fill: currentColor;
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+  color: var(--bg-color);
+  background-color: var(--accent);
+}
+/* clients */
+.section-clients {
+  margin-top: 95px;
+  margin-bottom: 94px;
+}
+.clients-title {
+  margin-bottom: 50px;
+
+  color: var(--secondary-text-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-list-icon:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--icon-color);
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.icon-clients {
+  fill: currentColor;
+}
+.clients-icon-link:hover,
+.clients-icon-link:focus {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 /* footer */
 .footer {
@@ -379,6 +453,8 @@ img {
 .filter-btn:focus {
   background-color: var(--accent);
   color: var(--bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn-list {
   display: flex;
@@ -403,6 +479,11 @@ img {
 }
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-title {
   margin-bottom: 4px;
