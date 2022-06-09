@@ -97,7 +97,8 @@ img {
   margin-right: 50px;
 }
 .site-nav .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -127,7 +128,8 @@ img {
   margin-right: 50px;
 }
 .auth-nav .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -224,17 +226,17 @@ img {
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
-.icon-features {
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  background-color: var(--filter-btn);
+
   width: 270px;
   height: 120px;
-  background-color: var(--filter-btn);
   border-radius: 4px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 30px;
 }
 /* activity */
 .activity {
