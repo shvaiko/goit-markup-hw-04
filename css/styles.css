@@ -151,13 +151,16 @@ img {
 }
 /* hero */
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
   background-color: var(--secondary-bg-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/background.jpg);
-
+  /* container 1200px, максимальная ширина холста
+  1600px, меньше, но не больше чем */
   max-width: 1600px;
   height: 600px;
   background-size: cover;
@@ -343,8 +346,8 @@ img {
 }
 /* clients */
 .section-clients {
-  margin-top: 95px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .clients-title {
   margin-bottom: 50px;
@@ -392,6 +395,7 @@ img {
 }
 .footer > .container {
   display: flex;
+  align-items: baseline;
 }
 .logo-footer {
   display: inline-block;
@@ -432,7 +436,6 @@ img {
 }
 /* join */
 .block-join {
-  padding-top: 12px;
   margin-left: 70px;
 }
 .join-text {
